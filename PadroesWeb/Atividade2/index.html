@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interesses Musicais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main>
+        <h1>Formulário Musical</h1>
+        <form id="formularioMusical" novalidate>
+            <section>
+                <fieldset>
+                    <label for="nome">Nome *</label>
+                    <input type="text" id="nome" name="nome" required autofocus>
+                    <span class="erro"></span>
+
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="erro"></span>
+
+                    <label for="telefone">Telefone *</label>
+                    <input type="text" id="telefone" name="telefone" required pattern="^\(\d{2}\) \d{4,5}-\d{4}$"
+                        placeholder="(99) 99999-9999">
+                    <span class="erro"></span>
+
+                    <label for="dataNascimento">Data de Nascimento *</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+                    <span class="erro"></span>
+
+                    <label for="fotoPerfil">Foto de Perfil</label>
+                    <input type="file" id="fotoPerfil" name="fotoPerfil" accept="image/*">
+                </fieldset>
+            </section>
+
+            <section>
+                <fieldset>
+                    <legend>Estilos Musicais *</legend>
+                    <div id="grupoEstilos" class="grupo-checkbox">
+                        <label><input type="checkbox" name="estilos" value="Pop"> Pop</label>
+                        <label><input type="checkbox" name="estilos" value="Rock"> Rock</label>
+                        <label><input type="checkbox" name="estilos" value="Sertanejo"> Sertanejo</label>
+                        <label><input type="checkbox" name="estilos" value="Funk"> Funk</label>
+                        <label><input type="checkbox" name="estilos" value="Jazz"> Jazz</label>
+                    </div>
+                    <span class="erro" id="erroEstilos"></span>
+
+                    <div id="containerArtistas"></div>
+
+                    <label for="melhorCantor">Melhor Cantor(a) *</label>
+                    <select id="melhorCantor" name="melhorCantor" required>
+                        <option value="">-- Escolha --</option>
+                        <option value="michael_jackson">Michael Jackson</option>
+                        <option value="freddie_mercury">Freddie Mercury</option>
+                        <option value="elvis_presley">Elvis Presley</option>
+                        <option value="whitney_houston">Whitney Houston</option>
+                        <option value="beyonce">Beyoncé</option>
+                    </select>
+                    <span class="erro"></span>
+                </fieldset>
+            </section>
+
+            <footer>
+                <button type="submit" class="botao-enviar">Enviar</button>
+                <button type="reset" class="botao-limpar">Limpar</button>
+            </footer>
+        </form>
+    </main>
+</body>
+
+</html>

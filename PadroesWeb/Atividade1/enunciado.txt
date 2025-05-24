@@ -1,0 +1,15 @@
+Criar uma tabela para a lista de disciplinas obrigatórias e optativas do seu curso que você já cursou;
+Deve conter no mínimo as colunas: código, nome, carga horária, período;
+Para disciplinas do mesmo período agrupar o dado do período para evitar repetição;
+Usar estilo zebra para linhas;
+Usar tabela completa;
+Atribuir estilos CSS para facilitar a visualização;
+Alinhar números à direita e texto à esquerda;
+A tabela deve ser responsiva em sua largura;
+Definir bordas únicas, sólidas, coloridas, formatar as colunas diferente dos conteúdos;
+A tabela deve ter legenda, posicionada abaixo da tabela e centralizada.
+Desafio [para quem já tem conhecimento prévio em JS]:
+
+Inclua código Javascript para permitir que o usuário selecione a coluna pela qual os dados serão ordenados;
+Permita ordenação crescente/decrescente;
+Não usar frameworks de Javascript.

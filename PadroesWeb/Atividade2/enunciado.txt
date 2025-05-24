@@ -1,0 +1,15 @@
+Criar um formulário para registrar os interesses musicais de uma pessoa;
+Deve conter dados de identificação pessoal como: nome, e-mail, telefone, data de nascimento, foto de perfil;
+Deve permitir selecionar 1 ou mais estilos musicais preferidos;
+Deve permitir informar uma lista longa de nomes de artistas dos estilos escolhidos;
+Deve poder selecionar qual o(a) melhor cantor(a) da história, de uma lista suspensa;
+Oferecer a opção de limpar o formulário;
+Oferecer a opção de enviar o formulário;
+O primeiro elemento do formulário deve receber foco automaticamente;
+Aplicar um estilo coerente em todo o formulário: bom espaçamento entre elementos, indicação de quais elementos são obrigatórios, destaque de qual elemento está com foco, fornecer rótulos para todos os elementos;
+Adicionar formatação ao texto dos botões;
+Criar agrupamentos de elementos por assunto;
+Para listas longas de opções, fornecer agrupamento de opções;
+Definir os padrões mínimos (p.ex. telefone, email);
+Criar validação para todos os campos em Javascript;
+Para itens que tiveram problema de validação, adicionar a informação do problema encontrado junto ao elemento de entrada.

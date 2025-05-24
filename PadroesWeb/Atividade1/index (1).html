@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disciplinas Cursadas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <section aria-labelledby="titulo-disciplinas">
+      <header>
+        <h1 id="titulo-disciplinas">Tabela de disciplinas obrigatórias e optativas cursadas no curso de Sistemas de Informação</h1>
+      </header>
+
+      <figure>        
+        <table id="disciplinasTable">
+        <!-- Leonelo:faltou o caption -->
+          <colgroup>
+            <col style="width:10%">
+            <col style="width:40%">
+            <col style="width:20%">
+            <col style="width:10%">
+          </colgroup>
+          <thead>
+            <tr>
+            <!-- melhor colocar o listener no JS em vez de JS inline no HTML -->
+              <th scope="col" onclick="sortTable(0)">Código</th>
+              <th scope="col" onclick="sortTable(1)">Nome</th>
+              <th scope="col" onclick="sortTable(2)">Carga Horária</th>
+              <th scope="col" onclick="sortTable(3)">Período</th>
+            </tr>
+          </thead>
+          <tbody>
+          <!-- Leonelo: faltou agrupar por período -->
+            <tr><td class="text-left">ICSD20</td><td class="text-left">INTRODUÇÃO À LÓGICA PARA COMPUTAÇÃO</td><td class="text-right">45</td><td class="text-right">1</td></tr>
+            <tr><td class="text-left">ICSF13</td><td class="text-left">FUNDAMENTOS DE PROGRAMAÇÃO 1</td><td class="text-right">90</td><td class="text-right">1</td></tr>
+            <tr><td class="text-left">ICSG10</td><td class="text-left">FUNDAMENTOS DE SISTEMAS DE INFORMAÇÃO</td><td class="text-right">60</td><td class="text-right">1</td></tr>
+            <tr><td class="text-left">ICSX10</td><td class="text-left">INTRODUÇÃO AO COMPUTAR</td><td class="text-right">60</td><td class="text-right">1</td></tr>
+            <tr><td class="text-left">MAT7GA</td><td class="text-left">GEOMETRIA ANALÍTICA</td><td class="text-right">60</td><td class="text-right">1</td></tr>
+            <tr><td class="text-left">GEE7A1</td><td class="text-left">FUNDAMENTOS DE ADMINISTRAÇÃO</td><td class="text-right">45</td><td class="text-right">2</td></tr>
+            <tr><td class="text-left">ICSE20</td><td class="text-left">TÉCNICAS DE PROGRAMAÇÃO</td><td class="text-right">60</td><td class="text-right">2</td></tr>
+            <tr><td class="text-left">ICSF20</td><td class="text-left">ESTRUTURAS DE DADOS 1</td><td class="text-right">45</td><td class="text-right">2</td></tr>
+            <tr><td class="text-left">MAT7AL</td><td class="text-left">ÁLGEBRA LINEAR</td><td class="text-right">60</td><td class="text-right">2</td></tr>
+            <tr><td class="text-left">MAT7C1</td><td class="text-left">CÁLCULO DIFERENCIAL E INTEGRAL 1</td><td class="text-right">90</td><td class="text-right">2</td></tr>
+            <tr><td class="text-left">EST70C</td><td class="text-left">INTRODUÇÃO À ESTATÍSTICA</td><td class="text-right">60</td><td class="text-right">3</td></tr>
+            <tr><td class="text-left">FCH7SA</td><td class="text-left">SOCIOLOGIA</td><td class="text-right">45</td><td class="text-right">3</td></tr>
+            <tr><td class="text-left">ICSD21</td><td class="text-left">MATEMÁTICA DISCRETA</td><td class="text-right">45</td><td class="text-right">3</td></tr>
+            <tr><td class="text-left">ICSF30</td><td class="text-left">ESTRUTURAS DE DADOS 2</td><td class="text-right">45</td><td class="text-right">3</td></tr>
+            <tr><td class="text-left">ICSW20</td><td class="text-left">ARQUITETURA EM ORGANIZAÇÃO DE COMPUTADORES</td><td class="text-right">60</td><td class="text-right">3</td></tr>
+            <tr><td class="text-left">FCH7FB</td><td class="text-left">FUNDAMENTOS DA ÉTICA</td><td class="text-right">45</td><td class="text-right">3</td></tr>
+            <tr><td class="text-left">FCH7HA</td><td class="text-left">HISTÓRIA DA TÉCNICA E DA TECNOLOGIA</td><td class="text-right">45</td><td class="text-right">3</td></tr>
+            <tr><td class="text-left">ICSG31</td><td class="text-left">GESTÃO DA INFORMAÇÃO EM SISTEMAS DE INFORMAÇÃO</td><td class="text-right">45</td><td class="text-right">3</td></tr>
+            <tr><td class="text-left">QBI7CA</td><td class="text-left">CIÊNCIAS DO AMBIENTE</td><td class="text-right">30</td><td class="text-right">3</td></tr>
+            <tr><td class="text-left">ICSG20</td><td class="text-left">ANÁLISE E PROJETO DE SISTEMAS</td><td class="text-right">45</td><td class="text-right">4</td></tr>
+            <tr><td class="text-left">ICSB61</td><td class="text-left">BIG DATA</td><td class="text-right">60</td><td class="text-right">4</td></tr>
+            <tr><td class="text-left">FCH7PA</td><td class="text-left">PSICOLOGIA DO TRABALHO</td><td class="text-right">30</td><td class="text-right">5</td></tr>
+          </tbody>  
+          <!-- Leonelo: faltou o tfoot -->      
+        </table>
+      </figure>
+    </section>
+  </main>
+  <script src="orderTable.js"></script>
+</body>
+</html>
